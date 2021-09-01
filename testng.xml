@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit">
+    <test name="My Test">
+        <classes>
+            <class name="dev.carlos.test.test1"></class>
+            <class name="dev.carlos.test.test2"></class>
+        </classes>
+    </test>
+    <test name="Car Loans">
+        <classes>
+            <class name="dev.carlos.test.carLoans"></class>
+        </classes>
+    </test>
+    <test name="Home Loans">
+        <classes>
+            <class name="dev.carlos.test.HomeLoans">
+                <methods>
+                    <exclude name="mobile_login_home"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
