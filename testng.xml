@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suit">
-    <test name="My Test">
-        <classes>
-            <class name="dev.carlos.test.test1"></class>
-            <class name="dev.carlos.test.test2"></class>
-        </classes>
-    </test>
+    <listeners>
+        <listener class-name="dev.carlos.test.Listeners"></listener>
+    </listeners>
+    <parameter name="url" value="www.yahoo.com"></parameter>
+    <parameter name="APIKEY" value="xyz123"></parameter>
     <test name="Car Loans">
         <classes>
             <class name="dev.carlos.test.carLoans"></class>
@@ -15,10 +14,13 @@
     <test name="Home Loans">
         <classes>
             <class name="dev.carlos.test.HomeLoans">
-                <methods>
-                    <exclude name="mobile_login_home"></exclude>
-                </methods>
             </class>
+        </classes>
+    </test>
+    <test name="My Test">
+        <classes>
+            <class name="dev.carlos.test.test1"></class>
+            <class name="dev.carlos.test.test2"></class>
         </classes>
     </test>
 </suite>

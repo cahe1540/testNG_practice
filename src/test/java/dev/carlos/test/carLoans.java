@@ -8,7 +8,7 @@ public class carLoans {
         System.out.println("web_login_car");
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void mobile_login_car(){
         System.out.println("mobile_login_car");
     }
